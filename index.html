@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(30deg, rgb(193, 105, 119), rgb(226, 16, 16));
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        document.write("<h2>Task</h2>" + "Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter.");
+        var char = prompt("Enter a single character : ");
+
+        if(char.length === 1){
+
+            if(char >= 1 && char <= 9){
+                console.log(char + " is a number");
+            }
+            else if(char >= 'A' && char <= 'Z'){
+                console.log(char + " is a Capital Letter");
+            }
+            else if(char >= 'a' && char <= 'z'){
+                console.log(char + " is a Small Letter");
+            }
+            else{
+                console.log("Enter only a Number or an Alphabet");
+            }
+        }
+        else{
+            console.log("Please Enter a Single number/character!");
+        }
+
+    </script>
+</body>
+</html>
