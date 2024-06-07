@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background: linear-gradient(30deg, rgb(71, 173, 84), rgb(4, 74, 14));
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        document.write("<h2>Task</h2>" + "Write a program that takes input a number from user & state whether the number is positive, negative or zero.");
+
+        var num1 = +prompt("Enter a number : ");
+      
+       if (num1 > 0){
+        console.log(num1 + " is Positive");
+       }
+       else if (num1 < 0){
+        console.log(num1 + " is Negative");
+       }
+       else{
+        console.log("Given number is Equal to zero")
+       }
+
+    </script>
+</body>
+</html>
