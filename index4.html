@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: linear-gradient(30deg, rgb(175, 100, 150), rgb(118, 5, 69));
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        document.write("<h2>Task</h2>" + "Write a program that takes a character (i.e. string of length 1) and returns true if it is a vowel, false otherwise");
+
+        var char = prompt("Enter a single character to find its vowel or not. : ");
+        var vowels = ['A','E','I','O','U','a','e','i','o','u'];
+        var flag = false;
+
+        if (char.length === 1) {
+
+            for(var i = 0; i <= vowels.length; i++){
+                if(vowels[i] == char){
+                    console.log(char + " is vowel.");
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag == false){
+                console.log(char + " is not a vowel.");
+            }
+        }
+        else {
+            console.log("Please Enter a Single character!");
+        }
+
+    </script>
+</body>
+
+</html>
